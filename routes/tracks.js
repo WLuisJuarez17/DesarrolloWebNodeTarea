@@ -37,7 +37,7 @@ const {
  *        '422':
  *          description: Error de validacion.
  */
-router.get("/", getItems);
+router.get("/", authMiddleware, getItems);
 /**
  * Get track
  * @openapi
